@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+// html,
+body {
+  height: 100%; //!!!!!!!!!!!
+  background-color: #333;
+  color: #fff;
+  font-size: 20px; // font-family: Tahoma;  font-weight: 100;
+}
+
+.wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.f-screen {
+  background-color: #666;
+  display: flex;
+  min-height: 100vh;
+  padding: 20px 0;
+
+  &_bg {
+    background: url("../../img/connor.png") center / contain no-repeat fixed;
+  }
+
+  &_2 {
+    background-color: #794f45;
+  }
+
+  &__body {
+    flex: 1 1 auto;
+    max-width: 1000px;
+    width: 100%; //4 iE v11
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  &__title {
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+
+  &__txt {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    display: inline-block;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    background-color: #77608d;
+    align-self: center;
+    padding: 0 20px;
+  }
+}
+
+.content__body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+
+  & p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.footer {
+  background-color: #111;
+  text-align: center;
+
+  &__body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+}
